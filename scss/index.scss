@@ -1,11 +1,13 @@
 /** @format */
 @import "./variables";
 @import "./layout";
+@import "./whitebox";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 
 body {
   font-family: $main-font;
   font-weight: $main-weight;
+  max-width: 100%;
 }
 
 .logo {
@@ -50,4 +52,12 @@ body {
 .h3 {
   font-weight: $main-weight;
   margin: 0;
+}
+.whitebox-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (min-width: 630px) {
+    flex-direction: row;
+  }
 }

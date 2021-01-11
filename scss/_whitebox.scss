@@ -1,0 +1,30 @@
+/** @format */
+
+.whitebox {
+  list-style-type: none;
+  width: 70vw;
+  min-height: 228px;
+  background-color: white;
+  text-align: center;
+  // padding: 36px 27px;
+  margin: 15px auto;
+  &__h {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 36px 27px 0 27px;
+  }
+  &__p {
+    font-weight: 300;
+    font-size: 15px;
+    color: 808080;
+    margin: 12px 27px 0 27px;
+  }
+  &__img {
+    margin: auto;
+    margin: 12px;
+  }
+  @media screen and (min-width: 630px) {
+    width: 332px;
+    margin: 10px;
+  }
+}
