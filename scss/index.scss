@@ -1,5 +1,53 @@
 /** @format */
+@import "./variables";
+@import "./layout";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 
-html {
-  color: red;
+body {
+  font-family: $main-font;
+  font-weight: $main-weight;
+}
+
+.logo {
+  margin: $logo-margin;
+}
+.section {
+  text-align: center;
+  &--light {
+    background-color: $light-blue;
+  }
+  &--highlighted {
+    background-color: $blue;
+  }
+}
+.h1 {
+  font-size: $h1-size;
+  padding-top: $h-top-padding;
+  &__subheader {
+    font-size: $h1-sub-size;
+    margin: 10px 15px;
+    &--white {
+      color: $white-text;
+    }
+    &--black {
+      color: $black-text;
+    }
+  }
+  &--white {
+    color: $white-text;
+  }
+  &--black {
+    color: $black-text;
+  }
+}
+.h3 {
+  font-size: $h3-size;
+  color: $black-text;
+  padding-top: $h-top-padding - 10px;
+}
+//h1 and h3 common features
+.h1,
+.h3 {
+  font-weight: $main-weight;
+  margin: 0;
 }
