@@ -27,7 +27,6 @@
 }
 .glider-prev,
 .glider-next {
-  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -38,7 +37,14 @@
 }
 .glider-prev.disabled,
 .glider-next.disabled {
-  opacity: 1;
+  opacity: 0.5;
   cursor: default;
-  background-color: rgba(245, 245, 220, 0);
+}
+.glider-prev:hover,
+.glider-next:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.glider-prev.disabled:hover,
+.glider-next.disabled:hover {
+  background-color: rgba(255, 255, 255, 0);
 }
