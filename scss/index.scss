@@ -1,14 +1,13 @@
 /** @format */
 @import "./variables";
 @import "./layout";
-@import "./whitebox";
-@import "./slider";
+@import "./components/whitebox";
+@import "./components/slider";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 
 body {
   font-family: $main-font;
   font-weight: $main-weight;
-  max-width: 100%;
   background-color: $light-blue;
 }
 header {
@@ -27,6 +26,9 @@ header {
   &--highlighted {
     background-color: $blue;
   }
+  @media screen and (min-width: $screen-xl-min) {
+    padding-bottom: 90px;
+  }
 }
 .h1 {
   font-size: $h1-size;
@@ -34,11 +36,17 @@ header {
   &__subheader {
     font-size: $h1-sub-size;
     margin: 10px 15px 40px 15px;
+    @media screen and (min-width: $screen-xl-min) {
+      margin: 20px 15px 40px 15px;
+    }
     &--white {
       color: $white;
     }
     &--black {
       color: $black;
+    }
+    @media screen and (min-width: $screen-xl-min) {
+      font-size: $h1-sub-size + 12px;
     }
   }
   &--white {
@@ -47,11 +55,17 @@ header {
   &--black {
     color: $black;
   }
+  @media screen and (min-width: $screen-xl-min) {
+    font-size: $h1-size + 20px;
+  }
 }
 .h3 {
   font-size: $h3-size;
   color: $black;
   padding-bottom: 24px;
+  @media screen and (min-width: $screen-xl-min) {
+    font-size: $h3-size + 12px;
+  }
 }
 //h1 and h3 common features
 .h1,
@@ -64,7 +78,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: $screen-md-min) {
     flex-direction: row;
   }
 }

@@ -11,6 +11,12 @@ body {
   margin: auto;
 }
 
+@media screen and (min-width: 1980px) {
+  .wrap {
+    max-width: 1296px;
+  }
+}
+
 /** @format */
 .whitebox {
   list-style-type: none;
@@ -29,11 +35,23 @@ body {
   margin: 36px 27px 0 27px;
 }
 
+@media screen and (min-width: 1980px) {
+  .whitebox__h {
+    font-size: 30px;
+  }
+}
+
 .whitebox__p {
   font-weight: 300;
   font-size: 15px;
   color: 808080;
-  margin: 12px 27px 0 27px;
+  margin: 12px 27px 20px 27px;
+}
+
+@media screen and (min-width: 1980px) {
+  .whitebox__p {
+    font-size: 20px;
+  }
 }
 
 .whitebox__img {
@@ -41,10 +59,16 @@ body {
   margin: 12px;
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 576px) {
   .whitebox {
     width: 332px;
     margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1980px) {
+  .whitebox {
+    width: 412px;
   }
 }
 
@@ -106,7 +130,6 @@ body {
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
-  max-width: 100%;
   background-color: #f1f6fc;
 }
 
@@ -131,6 +154,12 @@ header {
   background-color: #215398;
 }
 
+@media screen and (min-width: 1980px) {
+  .section {
+    padding-bottom: 90px;
+  }
+}
+
 .h1 {
   font-size: 40px;
   padding-top: 50px;
@@ -141,12 +170,24 @@ header {
   margin: 10px 15px 40px 15px;
 }
 
+@media screen and (min-width: 1980px) {
+  .h1__subheader {
+    margin: 20px 15px 40px 15px;
+  }
+}
+
 .h1__subheader--white {
   color: #ffffff;
 }
 
 .h1__subheader--black {
   color: #2d3236;
+}
+
+@media screen and (min-width: 1980px) {
+  .h1__subheader {
+    font-size: 32px;
+  }
 }
 
 .h1--white {
@@ -157,10 +198,22 @@ header {
   color: #2d3236;
 }
 
+@media screen and (min-width: 1980px) {
+  .h1 {
+    font-size: 60px;
+  }
+}
+
 .h3 {
   font-size: 30px;
   color: #2d3236;
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1980px) {
+  .h3 {
+    font-size: 42px;
+  }
 }
 
 .h1,
@@ -185,7 +238,7 @@ header {
           align-items: center;
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 768px) {
   .whitebox-flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

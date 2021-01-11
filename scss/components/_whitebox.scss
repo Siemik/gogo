@@ -13,19 +13,28 @@
     font-weight: 300;
     font-size: 20px;
     margin: 36px 27px 0 27px;
+    @media screen and (min-width: $screen-xl-min) {
+      font-size: 30px;
+    }
   }
   &__p {
     font-weight: 300;
     font-size: 15px;
     color: 808080;
-    margin: 12px 27px 0 27px;
+    margin: 12px 27px 20px 27px;
+    @media screen and (min-width: $screen-xl-min) {
+      font-size: 20px;
+    }
   }
   &__img {
     margin: auto;
     margin: 12px;
   }
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: $screen-sm-min) {
     width: 332px;
     margin: 10px;
+  }
+  @media screen and (min-width: $screen-xl-min) {
+    width: 412px;
   }
 }
