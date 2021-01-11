@@ -1,6 +1,7 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="css/glider.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
   <header>
     <div class="wrap">
@@ -33,7 +35,8 @@
             </div>
             <div class="whitebox">
               <h4 class="whitebox__h">Ultra Mega Super Long Heading</h4>
-              <p class="whitebox__p">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet</p>
+              <p class="whitebox__p">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Aenea uismod bibendum
+                laoreet. Lorem ipsum dolor sit amet</p>
             </div>
             <div class="whitebox">
               <h4 class="whitebox__h">Heading 2</h4>
@@ -44,7 +47,6 @@
               <p class="whitebox__p">Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
-        
           <button aria-label="Previous" class="glider-prev"></button>
           <button aria-label="Next" class="glider-next"></button>
           <div role="tablist" class="dots"></div>
@@ -65,20 +67,23 @@
           </div>
           <div class="whitebox">
             <h4 class="whitebox__h">Heading</h4>
-            <p class="whitebox__p">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet</p>
+            <p class="whitebox__p">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Aenea uismod bibendum
+              laoreet. Lorem ipsum dolor sit amet</p>
           </div>
           <div class="whitebox">
             <h4 class="whitebox__h">Ultra Mega Super Long Heading</h4>
             <p class="whitebox__p">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-      </section>
-      </div>
+    </section>
+    </div>
   </main>
+
+  <!-- slider JS -->
   <script src="glider.min.js"></script>
   <script src="glider-compat.min.js"></script>
   <script>
-    window.addEventListener('load', function(){
+    window.addEventListener('load', function () {
       new Glider(document.querySelector('.glider'), {
         slidesToScroll: 1,
         slidesToShow: 1,
@@ -90,7 +95,7 @@
           next: '.glider-next'
         },
         responsive: [
-        {
+          {
             breakpoint: 525,
             settings: {
               itemWidth: 360,
@@ -103,7 +108,7 @@
               // itemWidth: auto,
               exactWidth: false,
             }
-          },{
+          }, {
             breakpoint: 1200,
             settings: {
               slidesToShow: 3,
@@ -115,5 +120,7 @@
       })
     })
   </script>
+  <!-- slider JS END-->
 </body>
+
 </html>
