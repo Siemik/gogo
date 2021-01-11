@@ -2,6 +2,7 @@
 
 .glider {
   width: 70%;
+  overflow-x: hidden;
   @media screen and (min-width: 1200px) {
     width: auto;
   }
