@@ -113,7 +113,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .glider-prev {
-    top: 95px;
     left: -58px;
   }
 }
@@ -121,7 +120,6 @@ body {
 .glider-next {
   background-image: url("../media/right-arrow.png");
   background-position: 53% 50%;
-  top: 95px;
   right: 18px;
 }
 
@@ -134,10 +132,18 @@ body {
 
 .glider-prev,
 .glider-next {
+  top: 95px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1980px) {
+  .glider-prev,
+  .glider-next {
+    top: 105px;
+  }
 }
 
 .glider-prev.disabled,
