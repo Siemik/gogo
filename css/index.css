@@ -169,7 +169,7 @@ header {
   content: "";
   width: 32px;
   height: 32px;
-  background-color: red;
+  background-color: #ff3859;
   position: absolute;
   bottom: -16px;
   left: calc(50% - 16px);
