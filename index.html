@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PSD2CSS</title>
+  <link rel="stylesheet" href="css/glider.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -18,7 +19,30 @@
       <div class="wrap">
         <h1 class="h1 h1--white">Heading</h1>
         <p class="h1__subheader h1__subheader--white">Lorem ipsum dolor sit amet, consect etur adipiscing elit.</p>
-        //slider
+        <!-- slider -->
+        <div class="glider-contain">
+          <div class="glider">
+            <div class="whitebox">
+              <h4 class="whitebox__h">Heading</h4>
+              <p class="whitebox__p">Lorem ipsum dolor sit amet.</p>
+              <img class="whitebox__img" src="media/logo-wordpress.png" alt="Logo Wordpress">
+            </div>          <div class="whitebox">
+              <h4 class="whitebox__h">Heading</h4>
+              <p class="whitebox__p">Lorem ipsum dolor sit amet.</p>
+            </div>          <div class="whitebox">
+              <h4 class="whitebox__h">Ultra Mega Super Long Heading</h4>
+              <p class="whitebox__p">Lorem ipsum dolor sit amet, consect etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet</p>
+            </div>          <div class="whitebox">
+              <h4 class="whitebox__h">Heading 2</h4>
+              <p class="whitebox__p">Lorem ipsum dolor sit amet.</p>'
+            </div>
+          </div>
+        
+          <button aria-label="Previous" class="glider-prev"></button>
+          <button aria-label="Next" class="glider-next"></button>
+          <div role="tablist" class="dots"></div>
+        </div>
+        <!-- slider END -->
       </div>
     </section>
     <section class="section section--light">
@@ -44,5 +68,44 @@
       </section>
       </div>
   </main>
+  <script src="glider.min.js"></script>
+  <script>
+    window.addEventListener('load', function(){
+      new Glider(document.querySelector('.glider'), {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        itemWidth: 260,
+        resizeLock: true,
+        exactWidth: true,
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        },
+        responsive: [
+        {
+            breakpoint: 525,
+            settings: {
+              itemWidth: 360,
+            }
+          },
+          {
+            breakpoint: 775,
+            settings: {
+              slidesToShow: 2,
+              // itemWidth: auto,
+              exactWidth: false,
+            }
+          },{
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              // itemWidth: auto,
+              exactWidth: false,
+            }
+          },
+        ]
+      })
+    })
+  </script>
 </body>
 </html>

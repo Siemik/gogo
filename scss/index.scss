@@ -2,12 +2,17 @@
 @import "./variables";
 @import "./layout";
 @import "./whitebox";
+@import "./slider";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 
 body {
   font-family: $main-font;
   font-weight: $main-weight;
   max-width: 100%;
+  background-color: $light-blue;
+}
+header {
+  background-color: $white;
 }
 
 .logo {
@@ -15,6 +20,7 @@ body {
 }
 .section {
   text-align: center;
+  padding-bottom: 50px;
   &--light {
     background-color: $light-blue;
   }
@@ -27,25 +33,25 @@ body {
   padding-top: $h-top-padding;
   &__subheader {
     font-size: $h1-sub-size;
-    margin: 10px 15px;
+    margin: 10px 15px 40px 15px;
     &--white {
-      color: $white-text;
+      color: $white;
     }
     &--black {
-      color: $black-text;
+      color: $black;
     }
   }
   &--white {
-    color: $white-text;
+    color: $white;
   }
   &--black {
-    color: $black-text;
+    color: $black;
   }
 }
 .h3 {
   font-size: $h3-size;
-  color: $black-text;
-  padding-top: $h-top-padding - 10px;
+  color: $black;
+  padding-bottom: 24px;
 }
 //h1 and h3 common features
 .h1,
@@ -57,6 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   @media screen and (min-width: 630px) {
     flex-direction: row;
   }
