@@ -30,6 +30,21 @@ header {
     padding-bottom: 90px;
   }
 }
+.intro {
+  position: relative;
+}
+.intro::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: red;
+  position: absolute;
+  bottom: -16px;
+  left: calc(50% - 16px);
+  border-radius: 50%;
+  box-shadow: $red-shadow;
+}
+
 .h1 {
   font-size: $h1-size;
   padding-top: $h-top-padding;
